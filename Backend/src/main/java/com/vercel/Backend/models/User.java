@@ -42,12 +42,12 @@ public class User {
   private Date createdAt;
   private Date updatedAt;
 
-  @ManyToMany(fetch = FetchType.EAGER)
-  @JoinTable(name = "user_roles",
-  joinColumns = @JoinColumn(name = "user_id"), 
-  inverseJoinColumns = @JoinColumn(name = "role_id")
-  )
-  private List<Role> roles;
+  // @ManyToMany(fetch = FetchType.EAGER)
+  // @JoinTable(name = "user_roles",
+  // joinColumns = @JoinColumn(name = "user_id"), 
+  // inverseJoinColumns = @JoinColumn(name = "role_id")
+  // )
+  // private List<Role> roles;
 
   public User() {
   }
@@ -100,13 +100,13 @@ public class User {
     this.updatedAt = updatedAt;
   }
 
-  public List<Role> getRoles() {
-    return roles;
-  }
+  // public List<Role> getRoles() {
+  //   return roles;
+  // }
 
-  public void setRoles(List<Role> roles) {
-    this.roles = roles;
-  }
+  // public void setRoles(List<Role> roles) {
+  //   this.roles = roles;
+  // }
 
   @PrePersist
   protected void onCreate() {

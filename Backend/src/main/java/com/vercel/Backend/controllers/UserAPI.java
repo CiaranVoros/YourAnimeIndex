@@ -13,7 +13,7 @@ import com.vercel.Backend.models.User;
 import com.vercel.Backend.repositories.UserRepository;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "http://localhost:5173/")
 @RequestMapping("/api")
 public class UserAPI {
 
